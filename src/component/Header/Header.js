@@ -1,17 +1,11 @@
 import styled from "styled-components";
-import Image from "next/image";
 import Link from "next/link";
 const Header = () => {
   return (
     <HeaderContainer>
       <MenuWrap>
         <Link href="/">
-          <Image
-            src="/asset/images/apple/logo.png"
-            alt="test"
-            width={50}
-            height={50}
-          ></Image>
+          <LogoImg src="/asset/images/icons/logo.png" alt="test" />
         </Link>
         <MenuList>
           <Menu>
@@ -43,14 +37,16 @@ export default Header;
 const HeaderContainer = styled.section`
   width: 100%;
 `;
+const LogoImg = styled.img`
+  width: 320px;
+  margin-top: 40px;
+`;
 const MenuWrap = styled.div`
   display: flex;
   height: 100px;
   align-items: center;
-  padding: 0 100px;
 `;
 const MenuList = styled.ul`
-  margin: 0 auto;
   list-style: none;
   display: flex;
   gap: 50px;

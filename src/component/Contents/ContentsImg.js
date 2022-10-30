@@ -7,5 +7,4 @@ const ContentsImgs = styled.img`
   width: 400px;
   height: 500px;
   border-radius: 10px;
-  margin-right: 20px;
 `;
