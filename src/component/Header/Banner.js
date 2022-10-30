@@ -28,6 +28,16 @@ const BannerContainer = styled.section`
     z-index: 10;
     transform: translate(-30%, -50%);
   }
+  @media all and (max-width: 769px) {
+    width: 100vw;
+    overflow: hidden;
+    &::after {
+      left: 0%;
+      width: 50%;
+      font-size: 70px;
+      transform: translate(-3%, -50%);
+    }
+  }
 `;
 const BannerImage = styled.div`
   width: 500px;

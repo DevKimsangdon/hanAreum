@@ -134,11 +134,21 @@ const Title = styled.p`
     margin-right: 10px;
     z-index: 10;
   }
+  @media all and (max-width: 769px) {
+    font-size: 20px;
+    ::before {
+      height: 20px;
+      margin-right: 5px;
+    }
+  }
 `;
 const ContentsWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 200px;
+  @media all and (max-width: 769px) {
+    flex-direction: column;
+  }
 `;
 const ContentTxt = styled.div`
   font-family: "GmarketSans";
@@ -146,7 +156,12 @@ const ContentTxt = styled.div`
   margin-left: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
+  @media all and (max-width: 769px) {
+    align-items: start;
+    margin-left: 0px;
+  }
 `;
 const ContentTit = styled.p`
   font-family: "GmarketSans";
@@ -165,6 +180,13 @@ const ContentTit = styled.p`
     background-image: url("/asset/images/apple/apple_hover.png");
     background-size: cover;
   }
+  @media all and (max-width: 769px) {
+    font-size: 16px;
+    margin-left: 0;
+    &::before {
+      display: none;
+    }
+  }
 `;
 const P = styled.p`
   font-size: 16px;
@@ -177,5 +199,8 @@ const P = styled.p`
     margin: 0 5px;
     text-decoration: underline;
     text-underline-offset: 5px;
+  }
+  @media all and (max-width: 769px) {
+    margin-left: 0px;
   }
 `;

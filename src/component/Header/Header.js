@@ -30,6 +30,12 @@ const Header = () => {
           </Menu>
         </MenuList>
       </MenuWrap>
+      <SmallMewnuWrap>
+        <Link href="/">
+          <SmallLogoImg src="/asset/images/icons/logo.png" alt="test" />
+        </Link>
+        <SmallBtn></SmallBtn>
+      </SmallMewnuWrap>
     </HeaderContainer>
   );
 };
@@ -45,6 +51,9 @@ const MenuWrap = styled.div`
   display: flex;
   height: 100px;
   align-items: center;
+  @media all and (max-width: 769px) {
+    display: none;
+  }
 `;
 const MenuList = styled.ul`
   list-style: none;
@@ -88,4 +97,26 @@ const LinkButton = styled.button`
       background-size: cover;
     }
   }
+`;
+const SmallMewnuWrap = styled.section`
+  display: none;
+  @media all and (max-width: 769px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    overflow: hidden;
+    padding: 0 20px 0 0;
+  }
+`;
+const SmallLogoImg = styled.img`
+  width: 200px;
+  height: 300px;
+  margin-top: 30px;
+`;
+const SmallBtn = styled.button`
+  background: url("/asset/images/icons/menuBar.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+  border: none;
 `;

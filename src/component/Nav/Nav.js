@@ -40,4 +40,7 @@ const NavContainer = styled.div`
   width: 100vw;
   height: 100px;
   margin-top: 50px;
+  @media all and (max-width: 769px) {
+    display: none;
+  }
 `;
