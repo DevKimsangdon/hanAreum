@@ -6,7 +6,7 @@ const Contents = () => {
       <Wrapper>
         <Title>왜 청송 사과인가요?</Title>
         <ContentsWrapper>
-          <ContentsImg src="/asset/images/farm/farm.jpeg" />
+          <ContentsImg src="/asset/images/farm/farm.png" />
           <ContentTxt>
             <ContentTit>
               청송은 82%가 산으로 이루어진
@@ -38,7 +38,7 @@ const Contents = () => {
         </ContentsWrapper>
         <Title>왜 청송 사과인가요?</Title>
         <ContentsWrapper>
-          <ContentsImg src="/asset/images/farm/farm.jpeg" />
+          <ContentsImg src="/asset/images/farm/farm.png" />
           <ContentTxt>
             <ContentTit>
               청송은 82%가 산으로 이루어진
@@ -70,7 +70,7 @@ const Contents = () => {
         </ContentsWrapper>
         <Title>왜 청송 사과인가요?</Title>
         <ContentsWrapper>
-          <ContentsImg src="/asset/images/farm/farm.jpeg" />
+          <ContentsImg src="/asset/images/farm/farm.png" />
           <ContentTxt>
             <ContentTit>
               청송은 82%가 산으로 이루어진
