@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import Link from "next/link";
-import Icon from "../Icon/Icon";
 import ContentsImg from "./ContentsImg";
 const Contents = () => {
   return (
