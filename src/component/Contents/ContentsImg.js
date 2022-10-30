@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const ContentsImg = (props) => {
-  return <ContentsImgs src={props.src} alt={props.altt}></ContentsImgs>;
+  return <ContentsImgs src={props.src} alt={props.alt}></ContentsImgs>;
 };
 export default ContentsImg;
 const ContentsImgs = styled.img`
